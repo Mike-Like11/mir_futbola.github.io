@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta name="viewport" content="width=device-width, initial-scale=1">       
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style_menu.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src="scripts/main.js"></script>
+    <script src="scripts/menu.js"></script>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+   <title>Мир Футбола</title>
+
+  </head>
+  <body>  	
+  	<video autoplay muted loop id="myVideo">
+  <source src="img/video.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+
+<div class="widget">
+<center>
+<div id="menu_name">  
+ <h3>Мир Футбола</h3>
+</div>
+    <div class="container" onclick="open_close_test()">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
+    <script>
+        document.querySelector(".container").classList.toggle("change");
+    </script>
+  <div class="menu_list">
+  <ul>    
+   <li><a href="index.html">Главная<br> страница</br></a></li>    
+    <li><a href="test.html">Футбольная<br>викторина</br></a></li>
+    <li><a href="komanda.html">Команда<br> недели</br> </a></li>
+    <li><a href="top.html">Лучшие <br> клубы Европы</br></a></li>    
+    <li><a href="tabl.html">Турнирные<br> таблицы</br></a></li>    
+  </ul>
+  </div> 
+  </center> 
+</div>
+<div id="content3">   
+    <div class="header">
+      <h1 class="questionNumber"></h1>
+      <h2 class="question"></h2> 
+      <center>         
+      <img id="pict" class="responsive"style="margin-top: 5vh;" >
+      <h4 class="score"></h4>
+  </center>      
+    </div> 
+     <div style="text-align: center;">
+         <button id="button1" class="button" onclick="myFunction1()"></button>
+	<button id="button2" class="button" onclick="myFunction2()"></button>
+	<button id="button3" class="button" onclick="myFunction3()"></button>
+	<button id="button4" class="button" onclick="myFunction4()"></button>
+       <button id="next" class="button" style="margin:15px;
+    color: white; " onclick="next()">Следующий вопрос </button>
+     </div>
+  <div class="numero_shape"></div>  
+</div>
+  </body>
+</html>

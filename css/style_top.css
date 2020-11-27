@@ -1,0 +1,121 @@
+#real_madrid {
+  width: 50%;  	
+  max-width: 1000px;
+  color:black;
+  height: auto;
+  background-color: rgba(255,255,255,0.5); 
+  position: relative;
+  margin: auto;
+}
+#man_utd {
+  width: 50%;  	
+  max-width: 1000px;
+  color:white;
+  height: auto;
+  background: linear-gradient(rgba(207, 0, 15, 1),rgba(0,0,0,0.5));
+  position: relative;
+  margin: auto;
+}
+#barca {
+	width: 50%;  	
+  max-width: 1000px;
+  color:yellow;
+  height: auto;
+  background: rgb(129,31,9);
+  background: radial-gradient(circle, rgba(129,31,9,1) 0%, rgba(121,9,9,1) 0%, rgba(0,61,255,1) 100%);
+  position: relative;
+  margin: auto;
+}
+#top_clubs { 
+    position: fixed;   
+    right: 0;     
+    background: rgba(0, 0, 0, 0.5);
+    color: yellow;
+    width: 20%;
+    height: 100%;
+    padding: 1.3vw;    
+}
+@media only screen and (min-width:600px) {
+	#top_clubs { 
+	top:0;
+}
+}
+#top_clubs a {
+  outline: none;
+  text-decoration: none;   
+  width: 10vh;
+  text-align: center;
+  line-height: 17vh;
+  color: white;
+}
+#img_real{
+	width: 50%;
+	 height: auto;
+}
+#real_text{
+	width: 50%;
+	height: auto;
+	float:right;
+	text-align:center;
+}
+@media only screen and (max-width:600px) {
+#top_clubs a {
+  display: inline-block;
+  width: auto;
+  margin:auto;
+  height: 5vh;
+  text-align: center;
+  line-height: 3;
+  color: black;
+}
+#real_text{
+	width: 100%;
+	height: auto;
+	text-align:center;
+}
+#img_real{
+	width: 100%;	
+}
+#real_madrid {
+	
+	width: 75%;
+	margin-right: 0;
+	margin-top: 20vh;
+}
+#barca {
+	width: 75%;
+	margin-right: 0;
+	margin-top: 20vh;
+}
+#man_utd {
+	width: 75%;
+	margin-right: 0;
+	margin-top: 20vh;
+}
+#top_clubs a:link, #top_clubs a:visited, #top_clubs a:focus {	
+  background: yellow;
+}
+#top_clubs li {
+  display: inline;
+}
+#top_clubs {
+position: fixed;
+bottom: 0;  
+    margin-left:25%;  
+    width: 75%;
+    height:auto;
+}
+}
+
+#top_clubs li:last-child a {
+  margin-right: 0;
+}
+
+#top_clubs a:hover {     
+  background: orange;
+}
+
+#top_clubs a:active {
+  background: red;
+  color: white;
+}

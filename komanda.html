@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <title>Мир Футбола</title> 
+  <script src="scripts/komanda.js"></script>
+    <script src="scripts/menu.js"></script>  
+<script type="text/javascript"> 
+</script>
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+ <link rel="stylesheet" type="text/css" href="css/style.css">
+ <link rel="stylesheet" type="text/css" href="css/style_menu.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+<body>
+<video autoplay muted loop id="myVideo">
+  <source src="img/video.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+<div class="widget">
+<center>
+<div id="menu_name">  
+ <h3>Мир Футбола</h3>
+</div>
+    <div class="container" onclick="open_close_komanda()">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
+    <script>
+        document.querySelector(".container").classList.toggle("change");
+    </script>
+  <div class="menu_list" style="margin-top: 0;">
+  <ul>    
+    <li><a href="index.html">Главная<br> страница</br></a></li>    
+    <li><a href="test.html">Футбольная<br>викторина</br></a></li>
+    <li><a href="komanda.html">Команда<br> недели</br> </a></li>
+    <li><a href="top.html">Лучшие <br> клубы Европы</br></a></li>    
+    <li><a href="tabl.html">Турнирные<br> таблицы</br></a></li>    
+  </ul>
+  </div> 
+  </center> 
+</div>
+ <div class="field">  
+ <img src="img/field3.jpg" class="responsive_field"> 
+ <p id="demo"></p>
+ </div> 
+  </div>  
+  <div id="content6">
+ <div class='card'>
+<div style='width:100%;  margin-top:1.3vw; text-align:center'> 
+  <div class='card-body'>
+   <h2 id=block2 class="rainbow-animated"></h2> 
+  <h3 id=block3></h3>
+  <input type='button'  class='btn btn-primary' style='margin-bottom:0;' value='Закрыть' onmousedown='outviewDiv()'>
+  </div>
+  </div>
+</div>
+  </div>
+  <script type="text/javascript">
+    function outviewDiv(){
+  document.getElementById('content6').style.display = "none";  
+};
+
+function give(val) {
+  document.getElementById('content6').style.display = "block";
+
+  var obj = document.getElementById('block2');
+  obj.innerHTML = fruits[val];
+  var obj = document.getElementById('block3');
+  obj.innerHTML = info[val];   
+}
+let fruits,info,players,text="";
+info=["В матче против Манчестер Сити оставил свои ворота в неприкосновенности","Забил гол с углового, заработал пенальти, получил желтую,не дал нападающим Алавеса возможности распечатать ворота Куртуа, вообщем очередной хороший матч капитана сливочных","В тяжелейшем матче против Боруссии сделал 3 ключевых отбора и не позволил ничего сделать в своей штрафной площади","Отдал 2 предголевые передачи, благодаря которым Бавария одолела Боруссию","Сделал 3 безупречных подката, отдал голевую передачу на Марсиаля","В защите дейстовал безупречно, забил дальним ударом в ворота Севильи","В том что Эвертон возглавляет турнирную таблицу АПЛ, заслуга Хамеса неоценима: в последнем матче против Челси сделал целых 3 голевых паса","Поучавстовал в разгроме Марселя забил 2 гола и отдав голевую передачу на Мбаппе","Криштиану побил очередной рекорд, забив в ворота Пармы 4 безответных мяча","Килиан был творцом победы над Марселем 8:0: 4 гола и две голевые передачи говорят о себе","забил 2 раза с паса Дэвиса, сделал 15 успешных обводок"]
+players=['img/alisson.jpg','img/ramos.jpg','img/boateng.jpg','img/davies.jpg','img/bissaka.jpg',
+'img/llorente.jpg','img/james.jpg','img/neymar.jpg','img/ronaldo.jpg','img/mbappe.jpg','img/gnabry.jpg'];
+fruits = ["alisson", 'ramos', "Boateng", "davies","awb", "llorente", "james", "neymar","ronaldo", "mbappe","gnabry"];
+ 
+for (var i = 0; i < fruits.length; i++) {
+  if(i>4){
+  if(i==5){
+    text+= "<div style='position: absolute;background: rgba(0, 0, 0, 0.5); color: #f1f1f1;top:"+(8*(5/2)+2)+"vh;   margin-top:"+5.21+"vh; right:"+(43)+"%;text-align:center;'>"
+  }
+  else{
+    if(i==6){
+      text+= "<div style='position: absolute; background: rgba(0, 0, 0, 0.5);  color: #f1f1f1;top:"+(8*(13/2)+2.7)+"vh;   margin-top:"+5.21+"vh; right:"+(43)+"%;text-align:center;'>"
+    }
+  else{
+  if(i%2==0){
+   text+= "<div style='position: absolute; background: rgba(0, 0, 0, 0.5);  color: #f1f1f1;top:"+(8*(i/2)+2)+"vh;   margin-top:"+1.3*i+"vh; right:"+(14*((i-5)/2)+43)+"%;text-align:center;'>"
+  }
+  else{
+    text+= "<div style='position: absolute; background: rgba(0, 0, 0, 0.5);  color: #f1f1f1;top:"+(8*((i+1)/2)+2)+"vh;   margin-top:"+1.3*(i+1)+"vh; right:"+(-14*(((i-5)+1)/2)+43)+"%;text-align:center;'>"
+  }
+}
+}
+}
+  else{
+  if(i%2==0){
+   text+= "<div style='position: absolute; background: rgba(0, 0, 0, 0.5);  color: #f1f1f1;top:"+(8*(i/2)+2)+"vh;   margin-top:"+1.3*i+"vh; right:"+(14*(i/2)+43)+"%;text-align:center;'>"
+  }
+  else{
+    text+= "<div style='position: absolute; background: rgba(0, 0, 0, 0.5);  color: #f1f1f1;top:"+(8*((i+1)/2)+2)+"vh;   margin-top:"+1.3*(i+1)+"vh; right:"+(-14*((i+1)/2)+43)+"%;text-align:center;'>"
+  }
+  }  
+  text+="<div class='grow'>"  
+  text+="<img src='"+players[i]+"' id='kom_img' class='round'>"
+  text+="</div>" 
+    text+="<button id='"+i+"'class='ghost-button' onclick='give(this.id)'><h3 class='rainbow'>"+fruits[i]+"</h3></button>"   
+ text+="</div>";
+ }
+document.getElementById("demo").innerHTML = text;
+  </script>   
+<div id="content7">
+ <div class='card' style="right: 0; top: 0;">
+<div style='width:100%;  margin-top:1.3vw; text-align:center'> 
+  <div class='card-body'>
+   <h1 class="rainbow-animated">Команда лучших игроков по итогам ноября</h1>
+  </div>
+  </div>
+</div>
+  </div>
+</body>
+</html>

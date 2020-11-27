@@ -1,0 +1,9 @@
+window.setInterval(function(){
+   if(window.innerWidth>600){
+    document.querySelector('.main1').style.width="78vw";
+    document.querySelector('.main1').style.marginTop="5vh";
+    document.querySelector('.menu_list').style.display="block";
+    document.querySelector('.widget').style.height="100%";
+    document.querySelector('.widget').style.width="20%"; 
+  }
+},0);

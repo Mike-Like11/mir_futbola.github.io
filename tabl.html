@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">  
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+     <link rel="stylesheet" type="text/css" href="css/style_menu.css">
+     <link rel="stylesheet" type="text/css" href="css/style_table.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src="scripts/menu.js"></script> 
+     <script src="scripts/table.js"></script>
+  <title>Все о футболе</title>
+</head>
+<body>
+<video autoplay muted loop id="myVideo">
+  <source src="img/video.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+<div class="widget">
+<center>
+<div id="menu_name">  
+ <h3>Мир Футбола</h3>
+</div>
+    <div class="container" onclick="open_close_table()">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
+    <script>
+        document.querySelector(".container").classList.toggle("change");
+    </script>
+  <div class="menu_list">
+  <ul>    
+    <li><a href="index.html">Главная<br> страница</br></a></li>    
+    <li><a href="test.html">Футбольная<br>викторина</br></a></li>
+    <li><a href="komanda.html">Команда<br> недели</br> </a></li>
+    <li><a href="top.html">Лучшие <br> клубы Европы</br></a></li>    
+    <li><a href="tabl.html">Турнирные<br> таблицы</br></a></li>    
+  </ul>
+  </div> 
+  </center> 
+</div>
+ <div class="main1"> 	 
+    <div class="main2 table-responsive">
+        <center>
+            <h2> ПРЕМЬЕР-ЛИГА <img class="flag" src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1561260902/Flag_of_Great_Britain__281707_E2_80_931800_29.svg"></h2>
+            <p class="pt">ТУРНИРНАЯ ТАБЛИЦА 2020</p>
+            <table class="table">
+                <thead>
+                    <td>Поз.</td>
+                    <td class="name">КЛУБЫ</td>
+                    <td>О</td>
+                    <td>П</td>
+                    <td>Н</td>
+                    <td>П</td>
+                    <td>РГ</td>
+                    <td>ОЧКИ</td>
+                </thead>
+                <tbody>
+                    <tr class="top">
+                        <td>1</td>
+                        <td class="name"><img class="logo" src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1561260926/1200px-Manchester_City_FC_badge.svg.png">&nbsp;&nbsp; МС</td>
+                        <td>7</td>
+                        <td>6</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>+18</td>
+                        <td>19</td>
+                    </tr>
+                    <tr class="top">
+                        <td>2</td>
+                        <td class="name"><img class="logo" src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1561260950/1200px-Liverpool_FC.svg.png">&nbsp;&nbsp; ЛИВЕРПУЛЬ</td>
+                        <td>7</td>
+                        <td>6</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>+12</td>
+                        <td>19</td>
+                    </tr>
+                    <tr class="top">
+                        <td>3</td>
+                        <td class="name"><img class="logo" src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1561260970/Chelsea-logo.png">&nbsp;&nbsp; ЧЕЛСИ</td>
+                        <td>7</td>
+                        <td>5</td>
+                        <td>2</td>
+                        <td>0</td>
+                        <td>+10</td>
+                        <td>17</td>
+                    </tr>
+                    <tr class="top">
+                        <td>4</td>
+                        <td class="name"><img class="logo" src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1561260991/1200px-Tottenham_Hotspur.svg.png">&nbsp;&nbsp; ТОТТЕНХЕМ</td>
+                        <td>7</td>
+                        <td>5</td>
+                        <td>0</td>
+                        <td>2</td>
+                        <td>+7</td>
+                        <td>15</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td class="name"><img class="logo" src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1561261014/f1c7a000dc20ff2970a503b43ecad32a.png">&nbsp;&nbsp; АРСЕНАЛ</td>
+                        <td>7</td>
+                        <td>5</td>
+                        <td>0</td>
+                        <td>2</td>
+                        <td>+5</td>
+                        <td>15</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td class="name"><img class="logo" src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1561261036/1200px-Watford.svg.png">&nbsp;&nbsp; УОТФОРД</td>
+                        <td>7</td>
+                        <td>4</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>+3</td>
+                        <td>13</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td class="name"><img class="logo" src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1561261060/AFCB_08_grande.jpg">&nbsp;&nbsp; БОРНМУТ</td>
+                        <td>7</td>
+                        <td>4</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>0</td>
+                        <td>13</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td class="name"><img class="logo" src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1561261086/220px-Leicester_City_crest.svg.png">&nbsp;&nbsp; ЛЕСТЕР</td>
+                        <td>7</td>
+                        <td>4</td>
+                        <td>0</td>
+                        <td>3</td>
+                        <td>+3</td>
+                        <td>12</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td class="name"><img class="logo" src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1561261112/1200px-Wolverhampton_Wanderers.svg.png">&nbsp;&nbsp; ВУЛВЕРХЕМПТОН</td>
+                        <td>7</td>
+                        <td>3</td>
+                        <td>3</td>
+                        <td>1</td>
+                        <td>+2</td>
+                        <td>12</td>
+                    </tr>
+                </tbody>
+            </table>
+        </center>
+    </div>     
+     <div class="main_spain table-responsive" style="margin-top: 5vw;margin-bottom: 5vw">
+        <center>
+      <h2> ЛА ЛИГА <img class="flag" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Flag_of_Spain.svg/1125px-Flag_of_Spain.svg.png"></h2>
+            <p class="pt">ТУРНИРНАЯ ТАБЛИЦА 2020</p>
+            <table class="table">
+                <thead>
+                    <td>Поз.</td>
+                    <td class="name">КЛУБЫ</td>
+                    <td>О</td>
+                    <td>П</td>
+                    <td>Н</td>
+                    <td>П</td>
+                    <td>РГ</td>
+                    <td>ОЧКИ</td>
+                </thead>
+                <tbody>
+                    <tr class="top">
+                        <td>1</td>
+                        <td class="name"><img class="logo" src="https://seeklogo.net/wp-content/uploads/2014/10/real-madrid-logo-preview.png">&nbsp;&nbsp; РЕАЛ МАДРИД</td>
+                        <td>7</td>
+                        <td>6</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>+18</td>
+                        <td>19</td>
+                    </tr>
+                    <tr class="top">
+                        <td>2</td>
+                        <td class="name"><img class="logo" src="https://seeklogo.net/wp-content/uploads/2014/07/fc-barcelona-logo.png">&nbsp;&nbsp; БАРСЕЛОНА</td>
+                        <td>7</td>
+                        <td>6</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>+12</td>
+                        <td>19</td>
+                    </tr>
+                    <tr class="top">
+                        <td>3</td>
+                        <td class="name"><img class="logo" src="https://seeklogo.net/wp-content/uploads/2012/02/valencia-vector-logo.png">&nbsp;&nbsp; ВАЛЕНСИЯ</td>
+                        <td>7</td>
+                        <td>5</td>
+                        <td>2</td>
+                        <td>0</td>
+                        <td>+10</td>
+                        <td>17</td>
+                    </tr>
+                    <tr class="top">
+                        <td>4</td>
+                        <td class="name"><img class="logo" src="https://seeklogo.net/wp-content/uploads/2012/12/villarreal-logo-vector.png">&nbsp;&nbsp;СЕВИЛЬЯ</td>
+                        <td>7</td>
+                        <td>5</td>
+                        <td>0</td>
+                        <td>2</td>
+                        <td>+7</td>
+                        <td>15</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td class="name"><img class="logo" src="https://seeklogo.net/wp-content/uploads/2012/04/atletico-madrid-logo-vector.png">&nbsp;&nbsp;АТЛЕТИКО МАДРИД</td>
+                        <td>7</td>
+                        <td>5</td>
+                        <td>0</td>
+                        <td>2</td>
+                        <td>+5</td>
+                        <td>15</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td class="name"><img class="logo" src="https://seeklogo.net/wp-content/uploads/2012/12/alaves-logo-vector.png">&nbsp;&nbsp; МАЛАГА</td>
+                        <td>7</td>
+                        <td>4</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>+3</td>
+                        <td>13</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td class="name"><img class="logo" src="https://seeklogo.net/wp-content/uploads/2012/12/real-sociedad-logo-vector.png">&nbsp;&nbsp;РЕАЛ СОСЬЕДАД</td>
+                        <td>7</td>
+                        <td>4</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>0</td>
+                        <td>13</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td class="name"><img class="logo" src="https://seeklogo.net/wp-content/uploads/2012/10/mallorca-logo-vector.png">&nbsp;&nbsp; МАЛЬОРКА</td>
+                        <td>7</td>
+                        <td>4</td>
+                        <td>0</td>
+                        <td>3</td>
+                        <td>+3</td>
+                        <td>12</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td class="name"><img class="logo" src="https://seeklogo.net/wp-content/uploads/2011/06/granada-logo-vector.png">&nbsp;&nbsp; ГРАНАДА</td>
+                        <td>7</td>
+                        <td>3</td>
+                        <td>3</td>
+                        <td>1</td>
+                        <td>+2</td>
+                        <td>12</td>
+                    </tr>
+                </tbody>
+            </table>
+        </center>
+    </div>
+     </div>
+
+</body>
+</html>
+
