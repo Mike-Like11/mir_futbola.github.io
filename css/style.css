@@ -152,8 +152,8 @@ position: absolute;
 }
   @media only screen and (max-width:  600px) {
   	#kom_img{
-  	width:7vh;
-  	height: 7vh;
+  	width:10vh;
+  	height: 10vh;
   }
 
   }
@@ -361,7 +361,7 @@ height: 20%;
     background: rgba(255,255,255,255);
     color: black; 
     width: 100%;
-    line-height: 2 ;   	   
+    line-height:5;   	   
     z-index: 1; 
 }
 
@@ -399,7 +399,7 @@ height: 20%;
   -webkit-animation: rainbow 20s ease infinite;
   animation: rainbow 20s ease infinite;
  
-  line-height: 2vh;
+  line-height: 4vh;
 }
 @media screen and (min-width:  600px) {
 .rainbow-animated {

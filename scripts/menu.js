@@ -37,7 +37,7 @@
     document.querySelector('.main1').style.marginTop="20vh";   
   }
   }
-   function open_close_top(){
+  function open_close_top(){
   open_close_menu();
   if(document.querySelector('.menu_list').style.display=="block"){  
     document.querySelector('#real_madrid').style.width="75%";
@@ -57,11 +57,14 @@
    function open_close_komanda(){
       open_close_menu();
       if(document.querySelector('.menu_list').style.display=="block"){
-       document.querySelector('.field').style.width="80vw";  
+       document.querySelector('.field').style.width="80vw"; 
+       document.querySelector('#content7').style.width="80%"; 
        }
        else{ 
       document.querySelector('.widget').style.zIndex="1";
       document.querySelector('#content7').style.zIndex="0";
+
+      document.querySelector('#content7').style.width="100%";
       document.querySelector('.field').style.width="100%";       
      }
    } 
